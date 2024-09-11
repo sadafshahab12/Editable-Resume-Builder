@@ -1,0 +1,303 @@
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 26%;
+  }
+  #resume {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left {
+    width: 33rem;
+  }
+  .left h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .l-email,
+  .l-contact,
+  .l-address {
+    font-size: 1.75rem;
+  }
+  .right {
+    width: 44rem;
+  }
+  .right h1 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+  .email,
+  .contact,
+  .address {
+    font-size: 1.75rem;
+    gap: 1rem;
+  }
+  .objective h3 {
+    font-size: 3rem;
+
+    padding-top: 2rem;
+  }
+  .objective p {
+    min-height: 20rem;
+  }
+  .social {
+    padding-top: 10rem;
+    padding-left: 2rem;
+  }
+  .exdate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  fieldset {
+    border-radius: 1rem;
+  }
+
+  form input {
+    border-radius: 0.5rem;
+  }
+}
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 34%;
+  }
+  #resume {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left {
+    width: 38rem;
+  }
+  .left h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .l-email,
+  .l-contact,
+  .l-address {
+    font-size: 1.75rem;
+  }
+  .right {
+    width: 44rem;
+  }
+  .right h1 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+  .email,
+  .contact,
+  .address {
+    font-size: 1.75rem;
+    gap: 1rem;
+  }
+  .objective h3 {
+    font-size: 3rem;
+
+    padding-top: 2rem;
+  }
+  .objective p {
+    min-height: 20rem;
+  }
+  .social {
+    padding-top: 10rem;
+    padding-left: 2rem;
+  }
+  .exdate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  fieldset {
+    border-radius: 1rem;
+  }
+
+  form input {
+    border-radius: 0.5rem;
+  }
+}
+@media only screen and (max-width: 426px) {
+  html {
+    font-size: 37%;
+  }
+  #resume {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left {
+    width: 38rem;
+  }
+  .left h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .l-email,
+  .l-contact,
+  .l-address {
+    font-size: 1.75rem;
+  }
+  .right {
+    width: 44rem;
+  }
+  .right h1 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+  .email,
+  .contact,
+  .address {
+    font-size: 1.75rem;
+    gap: 1rem;
+  }
+  .objective h3 {
+    font-size: 3rem;
+
+    padding-top: 2rem;
+  }
+  .objective p {
+    min-height: 20rem;
+  }
+  .social {
+    padding-top: 10rem;
+    padding-left: 2rem;
+  }
+  .exdate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  fieldset {
+    border-radius: 1rem;
+  }
+
+  form input {
+    border-radius: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+  #resume {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .left {
+    width: 38rem;
+  }
+  .left h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .l-email,
+  .l-contact,
+  .l-address {
+    font-size: 1.75rem;
+  }
+  .right {
+    width: 44rem;
+  }
+  .right h1 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+  .email,
+  .contact,
+  .address {
+    font-size: 1.75rem;
+    gap: 1rem;
+  }
+  .objective h3 {
+    font-size: 3rem;
+
+    padding-top: 2rem;
+  }
+  .objective p {
+    min-height: 20rem;
+  }
+  .social {
+    padding-top: 10rem;
+    padding-left: 2rem;
+  }
+  .exdate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  fieldset {
+    border-radius: 1rem;
+    width: 95%;
+  }
+
+  form input {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+  html {
+    font-size: 72%;
+  }
+  #resume {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left {
+    width: 38rem;
+  }
+  .left h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .l-email,
+  .l-contact,
+  .l-address {
+    font-size: 1.75rem;
+  }
+  .right {
+    width: 44rem;
+  }
+  .right h1 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+  .email,
+  .contact,
+  .address {
+    font-size: 1.75rem;
+    gap: 1rem;
+  }
+  .objective h3 {
+    font-size: 3rem;
+
+    padding-top: 2rem;
+  }
+  .objective p {
+    min-height: 20rem;
+  }
+  .social {
+    padding-top: 10rem;
+    padding-left: 2rem;
+  }
+  .exdate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  fieldset {
+    border-radius: 1rem;
+  }
+
+  form input {
+    border-radius: 0.5rem;
+  }
+}
+@media only screen and (min-width: 2559px) {
+  html {
+    font-size: 150%;
+  }
+}
