@@ -1,20 +1,20 @@
 // Function to form submission
 function formSubmit(evt) {
   evt.preventDefault();
-  let fNameElem = document.getElementById("fname");
-  let contactElem = document.getElementById("contact");
-  let emailElem = document.getElementById("email");
-  let addressElem = document.getElementById("address");
-  let yearElem = document.getElementById("year");
-  let fieldElem = document.getElementById("field");
-  let instituteElem = document.getElementById("institute");
-  let jobElem = document.getElementById("job");
-  let compElem = document.getElementById("comp");
-  let sdateElem = document.getElementById("sdate");
-  let edateElem = document.getElementById("edate");
-  let skillElem = document.getElementById("skill");
-  let objectiveElem = document.getElementById("objective");
-  let picElem = document.getElementById("profile-pic");
+  let fNameElem = document.getElementById("fname") as HTMLInputElement;
+  let contactElem = document.getElementById("contact") as HTMLInputElement;
+  let emailElem = document.getElementById("email") as HTMLInputElement;
+  let addressElem = document.getElementById("address") as HTMLInputElement;
+  let yearElem = document.getElementById("year") as HTMLInputElement;
+  let fieldElem = document.getElementById("field") as HTMLInputElement;
+  let instituteElem = document.getElementById("institute") as HTMLInputElement;
+  let jobElem = document.getElementById("job") as HTMLInputElement;
+  let compElem = document.getElementById("comp") as HTMLInputElement;
+  let sdateElem = document.getElementById("sdate") as HTMLInputElement;
+  let edateElem = document.getElementById("edate") as HTMLInputElement;
+  let skillElem = document.getElementById("skill") as HTMLInputElement;
+  let objectiveElem = document.getElementById("objective") as HTMLInputElement;
+  let picElem = document.getElementById("profile-pic") as HTMLInputElement;
   if (
     !fNameElem ||
     !contactElem ||
@@ -116,7 +116,7 @@ function formSubmit(evt) {
     console.error("The resume output element is missing");
   }
   let editBtn1 = document.getElementById("edit-btn");
-  editBtn1.classList.add("display");
+  editBtn1?.classList.add("display");
 }
 // Changing  Edit to Save mde  and Save to edit mode modes
 function editBtn() {

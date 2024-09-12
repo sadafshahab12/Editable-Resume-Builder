@@ -57,7 +57,7 @@ function formSubmit(evt) {
         console.error("The resume output element is missing");
     }
     var editBtn1 = document.getElementById("edit-btn");
-    editBtn1.classList.add("display");
+    editBtn1 === null || editBtn1 === void 0 ? void 0 : editBtn1.classList.add("display");
 }
 // Changing  Edit to Save mde  and Save to edit mode modes
 function editBtn() {
