@@ -1,21 +1,20 @@
 // Function to form submission
 function formSubmit(evt) {
-    var _a;
     evt.preventDefault();
-    var fNameElem = document.getElementById("fname");
-    var contactElem = document.getElementById("contact");
-    var emailElem = document.getElementById("email");
-    var addressElem = document.getElementById("address");
-    var yearElem = document.getElementById("year");
-    var fieldElem = document.getElementById("field");
-    var instituteElem = document.getElementById("institute");
-    var jobElem = document.getElementById("job");
-    var compElem = document.getElementById("comp");
-    var sdateElem = document.getElementById("sdate");
-    var edateElem = document.getElementById("edate");
-    var skillElem = document.getElementById("skill");
-    var objectiveElem = document.getElementById("objective");
-    var picElem = document.getElementById("profile-pic");
+    let fNameElem = document.getElementById("fname");
+    let contactElem = document.getElementById("contact");
+    let emailElem = document.getElementById("email");
+    let addressElem = document.getElementById("address");
+    let yearElem = document.getElementById("year");
+    let fieldElem = document.getElementById("field");
+    let instituteElem = document.getElementById("institute");
+    let jobElem = document.getElementById("job");
+    let compElem = document.getElementById("comp");
+    let sdateElem = document.getElementById("sdate");
+    let edateElem = document.getElementById("edate");
+    let skillElem = document.getElementById("skill");
+    let objectiveElem = document.getElementById("objective");
+    let picElem = document.getElementById("profile-pic");
     if (!fNameElem ||
         !contactElem ||
         !emailElem ||
@@ -33,38 +32,96 @@ function formSubmit(evt) {
         console.error("Elements are missing");
         return;
     }
-    var fName = fNameElem.value;
-    var contact = contactElem.value;
-    var email = emailElem.value;
-    var address = addressElem.value;
-    var year = yearElem.value;
-    var field = fieldElem.value;
-    var institute = instituteElem.value;
-    var job = jobElem.value;
-    var comp = compElem.value;
-    var sdate = sdateElem.value;
-    var edate = edateElem.value;
-    var skill = skillElem.value;
-    var objective = objectiveElem.value;
-    var profPic = (_a = picElem.files) === null || _a === void 0 ? void 0 : _a[0];
-    var profPicURL = profPic ? URL.createObjectURL(profPic) : "";
-    var resumeOutput = "\n<div class=\"left\">\n        <h1>Dynamic Resume</h1>\n         ".concat(profPicURL ? "<img src=\"".concat(profPicURL, "\" class=\"pic\" alt=\"\">") : " ", "\n        <div class=\"objective\">\n          <h3>Objective</h3>\n          <p class=\"editable\">").concat(objective, "</p>\n        </div>\n        <div class=\"social\">\n          <div class=\"l-email\">\n            <i class=\"fa-solid fa-envelope\"></i>\n            <p class=\"editable\">").concat(email, "</p>\n          </div>\n          <div class=\"l-contact\">\n            <i class=\"fa-solid fa-phone\"></i>\n            <p class=\"editable\">").concat(contact, "</p>\n          </div>\n          <div class=\"l-address\">\n            <i class=\"fa-solid fa-location-dot\"></i>\n            <p class=\"editable\">").concat(address, "</p>\n          </div>\n        </div>\n      </div>\n      <div class=\"right\">\n        <h1 class=\"name editable\">").concat(fName, "</h1>\n        <div class=\"email\">\n          <i class=\"fa-solid fa-envelope\"></i>\n          <p class=\"editable\">").concat(email, "</p>\n        </div>\n        <div class=\"contact\">\n          <i class=\"fa-solid fa-phone\"></i>\n          <p class=\"editable\">").concat(contact, "</p>\n        </div>\n        <div class=\"address\">\n          <i class=\"fa-solid fa-location-dot\"></i>\n          <p class=\"editable\">").concat(address, "</p>\n        </div>\n\n        <hr />\n\n        <div class=\"edu\">\n          <h3>Education</h3>\n          <p class=\"editable\">").concat(year, "</p>\n          <p class=\"editable\">").concat(field, "</p>\n          <p class=\"editable\">").concat(institute, "</p>\n        </div>\n        <div class=\"exp\">\n          <h3>Experience</h3>\n          <p class=\"editable\">").concat(job, "</p>\n          <p class=\"editable\">").concat(comp, "</p>\n          <p>Start:<span id=\"edit-sdate\" class=\"editable\"> ").concat(sdate, "</span></p>\n          <p>End: <span id=\"edit-edate\" class=\"editable\">").concat(edate, " </span></p>\n        </div>\n        <div class=\"skill\">\n          <h3>Skill</h3>\n          <p class=\"skill editable\">").concat(skill, "</p>\n        </div>\n      </div>\n");
-    var resumeOutputElem = document.getElementById("resume");
+    const fName = fNameElem.value;
+    const contact = contactElem.value;
+    const email = emailElem.value;
+    const address = addressElem.value;
+    const year = yearElem.value;
+    const field = fieldElem.value;
+    const institute = instituteElem.value;
+    const job = jobElem.value;
+    const comp = compElem.value;
+    const sdate = sdateElem.value;
+    const edate = edateElem.value;
+    const skill = skillElem.value;
+    const objective = objectiveElem.value;
+    const profPic = picElem.files?.[0];
+    const profPicURL = profPic ? URL.createObjectURL(profPic) : "";
+    let resumeOutput = `
+<div class="left">
+        <h1>Dynamic Resume</h1>
+         ${profPicURL ? `<img src="${profPicURL}" class="pic" alt="">` : " "}
+        <div class="objective">
+          <h3>Objective</h3>
+          <p class="editable">${objective}</p>
+        </div>
+        <div class="social">
+          <div class="l-email">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="editable">${email}</p>
+          </div>
+          <div class="l-contact">
+            <i class="fa-solid fa-phone"></i>
+            <p class="editable">${contact}</p>
+          </div>
+          <div class="l-address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="editable">${address}</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h1 class="name editable">${fName}</h1>
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <p class="editable">${email}</p>
+        </div>
+        <div class="contact">
+          <i class="fa-solid fa-phone"></i>
+          <p class="editable">${contact}</p>
+        </div>
+        <div class="address">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="editable">${address}</p>
+        </div>
+
+        <hr />
+
+        <div class="edu">
+          <h3>Education</h3>
+          <p class="editable">${year}</p>
+          <p class="editable">${field}</p>
+          <p class="editable">${institute}</p>
+        </div>
+        <div class="exp">
+          <h3>Experience</h3>
+          <p class="editable">${job}</p>
+          <p class="editable">${comp}</p>
+          <p>Start:<span id="edit-sdate" class="editable"> ${sdate}</span></p>
+          <p>End: <span id="edit-edate" class="editable">${edate} </span></p>
+        </div>
+        <div class="skill">
+          <h3>Skill</h3>
+          <p class="skill editable">${skill}</p>
+        </div>
+      </div>
+`;
+    let resumeOutputElem = document.getElementById("resume");
     if (resumeOutputElem) {
         resumeOutputElem.innerHTML = resumeOutput;
     }
     else {
         console.error("The resume output element is missing");
     }
-    var editBtn1 = document.getElementById("edit-btn");
-    editBtn1 === null || editBtn1 === void 0 ? void 0 : editBtn1.classList.add("display");
+    let editBtn1 = document.getElementById("edit-btn");
+    editBtn1?.classList.add("display");
 }
 // Changing  Edit to Save mde  and Save to edit mode modes
 function editBtn() {
-    var editbtn = document.getElementById("edit-btn");
+    let editbtn = document.getElementById("edit-btn");
     if (!editbtn)
         return;
-    var editableElem = document.querySelectorAll(".editable");
+    let editableElem = document.querySelectorAll(".editable");
     if (editbtn.textContent === "Edit") {
         // change into edit
         editableElem.forEach(function (element) {
@@ -88,8 +145,8 @@ function editBtn() {
 }
 // applying event listeners
 function formSubmitDone() {
-    var form = document.getElementById("resume-form");
-    var editbtn = document.getElementById("edit-btn");
+    let form = document.getElementById("resume-form");
+    let editbtn = document.getElementById("edit-btn");
     if (form) {
         form.addEventListener("submit", formSubmit);
     }
@@ -98,3 +155,4 @@ function formSubmitDone() {
     }
 }
 formSubmitDone();
+

@@ -1,5 +1,5 @@
 // Function to form submission
-function formSubmit(evt) {
+function formSubmit(evt:Event) {
   evt.preventDefault();
   let fNameElem = document.getElementById("fname") as HTMLInputElement;
   let contactElem = document.getElementById("contact") as HTMLInputElement;
